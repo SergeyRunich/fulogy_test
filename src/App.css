@@ -1,0 +1,327 @@
+
+body, html {
+    margin: 0;
+    height: 100%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#header-top {
+    background-color: #000;
+    height: 50px;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#header-menu .logo {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+}
+.cart{
+  position: relative;
+  background-color: #000;
+  height: 50px;
+  margin-right: 20px;
+}
+
+button, button:active, button:focus {
+    outline: none;
+}
+.topNav{
+  position: relative;
+  top: 0;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topNav svg{
+  fill: rgb(255, 255, 255);
+}
+.toggle-menu {
+    position: relative;
+    z-index: 100;
+    border: none;
+    background-color: #000;
+}
+.sandwich {
+    left: 0;
+    z-index: 200;
+    width: 28px;
+}
+.sandwich .sw {
+    position: relative;
+    top: 0;
+    margin-top:3px;
+    width: 28px;
+    height: 3px;
+    background: #fff;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    transition: transform .5s,top .2s;
+    display: block;
+}
+.closeCrosse{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+}
+
+.constBox{
+  flex: 1 0 auto;
+  padding: 0;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.constBox .previewBox{
+  width: 50%;
+  padding:30px;
+}
+.constBox .settingBox{
+  width: 50%;
+}
+.infoPanel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 30px 50px;
+  background: white;
+  z-index: 99;
+  box-sizing: border-box;
+}
+.infoPanel .backBtn {
+  color: #999;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.carousel{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  box-shadow: 0px 1px 8px 0px;
+}
+.carouselNav{
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  height: 8px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 35px);
+}
+.navBullet{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.selected{
+  background-color: #fff;
+}
+
+.settingBox{
+  display: flex;
+  border-left: 2px solid #f1f1f1;
+  flex-direction: column;
+}
+.lightSpecs{
+  width: 100%;
+}
+.lightType{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.choseType{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+  background-color: #1fb8fc;
+  justify-content: space-between;
+}
+.typeInfoBtn{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #1daced;
+  line-height: 50px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+.stepTitle{
+  display: inline-block;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  flex: 1 0 auto;
+}
+.specsTable{
+  width: 100%;
+  padding:30px;
+  font-size: 18px;
+  color: #8d8d8d;
+  font-family: HelveticaNeueCyr-Roman,"sans-serif";
+}
+.specsTable td{
+  width: 50%;
+  vertical-align: top;
+  padding: 5px 0 5px 0;
+}
+#kitClass{
+  background-color: #efefef;
+  padding: 3px 5px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 3px 0px;
+}
+.lightItemBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.lightItem{
+  position: relative;
+  display: inline-block;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  box-shadow: 0px 1px 8px 0px;
+  height:90px;
+  width: 120px;
+  margin: 0 10px;
+}
+.selectedLightItemMark{
+  position: absolute;
+  top:6px;
+  right: 6px;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  background-color: #1fb8fc;
+  background-size: contain;
+}
+.lightItemName{
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  color:#fff;
+  font-size: 16px;
+  text-align: center;
+  background-color: rgba(50, 50, 50, 0.8);
+}
+
+.footerSteps{
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: 0 30px;
+  background-color: #f8f8f8;
+  border-top:2px solid #f1f1f1;
+  height: 60px;
+  display: flex;
+}
+.constStep{
+  position: relative;
+  font-size: 18px;
+  background-color: #f8f8f8;
+  border-right: 2px solid #f1f1f1;
+  cursor: pointer;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+  text-align: center;
+}
+.passedStep{
+  position: absolute;
+  height: 4px;
+  bottom:0;
+  left:0;
+  width: 100%;
+  background-color: #1fb7fc;
+}
+.currentStep{
+  background-color: #1fb7fc;
+  color: #fff;
+}
+.nextStep{
+  position: absolute;
+  height: 4px;
+  bottom:0;
+  left:0;
+  width: 100%;
+  background-color: #fd8285;
+}
+.constStep:first-child{
+  border-left: 2px solid #f1f1f1;
+}
+
+.topMenuBox{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: calc(100% - 50px);
+  top:50px;
+  right:0;
+  z-index: 1000;
+  background-color: #000;
+}
+.menuItem{
+  position: relative;
+  display: flex;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #131212;
+  cursor: pointer;
+  flex: 1;
+}
